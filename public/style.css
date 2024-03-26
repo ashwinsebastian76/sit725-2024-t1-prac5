@@ -1,0 +1,10 @@
+.nav-wrapper {
+    background-color: rgb(36, 35, 37);
+}
+
+.main-image {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

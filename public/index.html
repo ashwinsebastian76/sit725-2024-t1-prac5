@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exotic Cars</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">CAR SHOP</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">FIND CARS</a></li>
+                <li><a href="#">FIND SHOPS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div>
+            <h4 class="center-align">USED CARS MELBOURNE</h4>
+            <div class="row">
+                <div class="col s12"></div>
+                <img src="images/main.png" alt="" srcset="" class="main-image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/car1.webp">
+                        <span class="card-title">Rolls Royce Phantom</span>
+                    </div>
+                    <div class="card-content">
+                        <p>A British beauty with 16 cylinders roaring.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger">BUY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/car2.webp">
+                        <span class="card-title">Ferarri SF90</span>
+                    </div>
+                    <div class="card-content">
+                        <p>The SF90 is an Italian peice of art that will blow your minds.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger">BUY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/car3.jpeg">
+                        <span class="card-title">Pinafarina Batista</span>
+                    </div>
+                    <div class="card-content">
+                        <p>The fastest accelerating man made machine.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger">BUY</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="row modal-content">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="family_name" type="text" class="validate">
+                        <label for="family_name">Family Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="phone" type="phone" class="validate">
+                        <label for="phone">Phone number</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="bid" class="materialize-textarea"></textarea>
+                        <label for="bid">BID PRICE</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 center-align">
+                        <a class="waves-effect waves-light btn" id="formSubmit">PLACE BID</a>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
