@@ -1,7 +1,7 @@
 {
-  "name": "sit725_2024-t1-prac3",
+  "name": "sit725_2024-t1-prac4",
   "version": "1.0.0",
-  "description": "",
+  "description": "Integrating MongoDB",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
