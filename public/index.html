@@ -24,11 +24,13 @@
         <div>
             <h4 class="center-align">USED CARS MELBOURNE</h4>
             <div class="row">
-                <div class="col s12"></div>
-                <img src="images/main.png" alt="" srcset="" class="main-image">
+                <div class="col s12">
+                    <img src="images/main.png" alt="" srcset="" class="main-image">
+                    <a href="#modal1" class="waves-effect waves-light btn addCarBtn modal-trigger">Add Car</a>
+                </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="cards">
             <div class="col s12 m4">
                 <div class="card">
                     <div class="card-image">
@@ -38,9 +40,9 @@
                     <div class="card-content">
                         <p>A British beauty with 16 cylinders roaring.</p>
                     </div>
-                    <div class="card-action">
+                    <!-- <div class="card-action">
                         <a href="#modal1" class="waves-effect waves-light btn modal-trigger">BUY</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col s12 m4">
@@ -52,9 +54,9 @@
                     <div class="card-content">
                         <p>The SF90 is an Italian peice of art that will blow your minds.</p>
                     </div>
-                    <div class="card-action">
+                    <!-- <div class="card-action">
                         <a href="#modal1" class="waves-effect waves-light btn modal-trigger">BUY</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col s12 m4">
@@ -66,9 +68,9 @@
                     <div class="card-content">
                         <p>The fastest accelerating man made machine.</p>
                     </div>
-                    <div class="card-action">
+                    <!-- <div class="card-action">
                         <a href="#modal1" class="waves-effect waves-light btn modal-trigger">BUY</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -78,33 +80,40 @@
     <!-- Modal Structure -->
     <div id="modal1" class="modal modal-fixed-footer">
         <div class="row modal-content">
-            <form class="col s12">
+            <form class="col s12" action="/addCar" method="post" >
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="first_name" type="text" class="validate">
+                        <input id="first_name" type="text" class="validate" name="firstName">
                         <label for="first_name">First Name</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="family_name" type="text" class="validate">
+                        <input id="family_name" type="text" class="validate" name="familyName">
                         <label for="family_name">Family Name</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="phone" type="phone" class="validate">
+                        <input id="phone" type="number" class="validate" name="phone">
                         <label for="phone">Phone number</label>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <textarea id="bid" class="materialize-textarea"></textarea>
+                        <input id="imageurl" type="text" class="validate" name="imageURL">
+                        <label for="imageurl">Image URL</label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="bid" class="materialize-textarea" name="bid"></textarea>
                         <label for="bid">BID PRICE</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12 center-align">
-                        <a class="waves-effect waves-light btn" id="formSubmit">PLACE BID</a>
+                        <button class="waves-effect waves-light btn" id="formSubmit">PLACE BID</button>
                     </div>
                 </div>
         </div>

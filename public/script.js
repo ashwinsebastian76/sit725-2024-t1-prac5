@@ -3,17 +3,23 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Modal.init(elems);
 });
 
-const submitForm = () => { 
-    let formData = {};
-     formData.first_name = $('#first_name').val(); 
-    formData.family_name = $('#family_name').val(); 
-    formData.phone = $('#phone').val();
-    formData.bid = $('#bid').val();
-     console.log("Form Data Submitted: ", formData);
-     }
-
 $(document).ready(function () {
-    $("#formSubmit").click(() => {
-      submitForm();
-    });
+  $.get('/api/cars', function (cars) {
+      var cardSection = $('#cards');
+      cars.forEach(car => {
+          var cardHtml = `
+          <div class="col s12 m4">
+          <div class="card">
+              <div class="card-image">
+                  <img src="${car.imageURL}">
+                  <span class="card-title">"${car.bid}"</span>
+              </div>
+              <div class="card-content">
+                  <p>"${car.phone}"</p>
+              </div>
+          </div>
+      </div>`;
+          cardSection.append(cardHtml);
+      });
   });
+});
