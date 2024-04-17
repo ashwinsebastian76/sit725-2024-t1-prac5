@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $(document).ready(function () {
-  $.get('/api/cars', function (cars) {
+  $.get('/cars', function (cars) {
       var cardSection = $('#cards');
       cars.forEach(car => {
           var cardHtml = `
